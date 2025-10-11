@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ハロウィン酒造パーティー 2025</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        @keyframes pulse-glow {
+            0%, 100% { box-shadow: 0 0 20px rgba(255, 165, 0, 0.5); }
+            50% { box-shadow: 0 0 40px rgba(255, 165, 0, 0.8); }
+        }
+        .float { animation: float 3s ease-in-out infinite; }
+        .pulse-glow { animation: pulse-glow 2s ease-in-out infinite; }
+        body { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); }
+        .carousel-item { display: none; }
+        .carousel-item.active { display: block; }
+        .scroll-reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s; }
+        .scroll-reveal.active { opacity: 1; transform: translateY(0); }
+    </style>
+</head>
+<body class="min-h-screen text-white">
+    <!-- Hero Carousel Section -->
+    <div class="relative h-screen overflow-hidden">
+        <!-- Carousel Images -->
+        <div class="carousel-item active absolute inset-0 transition-opacity duration-1000">
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black opacity-70"></div>
+            <img src="./タイトルなし.png" alt="ハロウィンパーティー" class="w-full h-full object-cover">
+            <div class="absolute inset-0 flex items-center justify-center">
+                <div class="text-center px-4">
+                    <div class="text-6xl md:text-8xl mb-6 float">🐶🐱</div>
+                    <h1 class="text-5xl md:text-7xl font-bold mb-4 text-white drop-shadow-2xl">伝統的な酒造で過ごす</h1>
+                    <p class="text-3xl md:text-5xl font-bold text-orange-400 drop-shadow-lg">幻想的なハロウィンナイト！</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Down Indicator -->
+        <div class="absolute bottom-20 left-1/2 -translate-x-1/2 animate-bounce">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+            </svg>
+        </div>
+    </div>
+
+    <div class="container mx-auto px-4 py-16 md:py-24">
+        <!-- Intro Section -->
+        <div class="text-center mb-20 scroll-reveal">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 bg-clip-text text-transparent">
+                桜花でファーリー 2025
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-300 mb-4">日常では味わえない楽しさ！</p>
+            <p class="text-lg text-gray-400 max-w-3xl mx-auto leading-relaxed">
+                ひと口、感動する、 笑みが溢れる。最高の酒造を完全貸切！<br>
+                和の伝統とケモノの融合が生み出す、ここでしか味わえない特別な体験をあなたに！
+            </p>
+        </div>
+
+        <!-- Main Content Card -->
+        <div class="max-w-4xl mx-auto bg-gradient-to-br from-gray-900 to-gray-800 rounded-3xl shadow-2xl overflow-hidden pulse-glow border-2 border-orange-500 mb-20 scroll-reveal">
+            <!-- Event Image Area -->
+            <div class="bg-gradient-to-r from-orange-600 to-purple-700 p-8 md:p-12 text-center">
+                <div class="text-6xl md:text-8xl mb-4">🍺🎃🐶</div>
+                <h2 class="text-3xl md:text-4xl font-bold">参加費 ¥1,500から！</h2>
+                <p class="text-lg mt-2">ワンドリンク、更衣室代付きでこの価格!</p>
+            </div>
+
+            <!-- Event Details -->
+            <div class="p-8 md:p-12">
+                <div class="grid md:grid-cols-1 gap-6 mb-8">
+                    <div class="bg-gray-800 rounded-xl p-6 border border-orange-400 hover:scale-105 transition-transform">
+                        <div class="text-4xl mb-3">📅</div>
+                        <h3 class="text-xl font-bold text-orange-400 mb-2">開催日時</h3>
+                        <p class="text-2xl font-bold">2025年10月31日</p>
+                        <p class="text-gray-400">17:00 - 22:00(LO21:30)</p>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-6 mb-8">
+                    <div class="bg-gray-800 rounded-xl p-6 border border-orange-400 hover:scale-105 transition-transform">
+                        <div class="text-4xl mb-3">💰</div>
+                        <h3 class="text-xl font-bold text-orange-400 mb-2">参加費</h3>
+                        <p class="text-2xl font-bold">1チケット¥1,500(1ドリンク、更衣室代付き)</p>
+                        <p class="text-sm text-gray-400">※当日現金払いのみ</p>
+                    </div>
+                    
+                    <div class="bg-gray-800 rounded-xl p-6 border border-orange-400 hover:scale-105 transition-transform">
+                        <div class="text-4xl mb-3">💰</div>
+                        <h3 class="text-xl font-bold text-orange-400 mb-2">参加費</h3>
+                        <p class="text-2xl font-bold">1チケット¥2,000(2ドリンク、更衣室代付き)</p>
+                        <p class="text-2x2 font-bold">3杯目以降は¥500から</p>
+                        <p class="text-sm text-gray-500 mt-2">※当日現金払いのみ</p>
+                    </div>
+                </div>
+
+                <!-- Features -->
+                <div class="space-y-4 mb-8">
+                    <div class="flex items-start bg-gradient-to-r from-purple-900 to-transparent rounded-lg p-4 hover:from-purple-800 transition-colors">
+                        <span class="text-3xl mr-4">🍶</span>
+                        <div>
+                            <h4 class="font-bold text-lg text-orange-300">酒造まるごと貸切！</h4>
+                            <p class="text-gray-300">弘明寺商店街にある酒造を1日完全貸切！</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start bg-gradient-to-r from-orange-900 to-transparent rounded-lg p-4 hover:from-orange-800 transition-colors">
+                        <span class="text-3xl mr-4">🍹</span>
+                        <div>
+                            <h4 class="font-bold text-lg text-orange-300">こだわりのワンドリンク！</h4>
+                            <p class="text-gray-300">酒造自慢の日本酒、ウイスキー、ハイボール、カクテル、ソフトドリンクから選べます。また軽食もございます！</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start bg-gradient-to-r from-pink-900 to-transparent rounded-lg p-4 hover:from-pink-800 transition-colors">
+                        <span class="text-3xl mr-4">🐶</span>
+                        <div>
+                            <h4 class="font-bold text-lg text-orange-300">着ぐるみ大歓迎！</h4>
+                            <p class="text-gray-300">着ぐるみさん大歓迎！思いっきりハロウィンを楽しみましょう！</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Special Features Section -->
+        <div class="max-w-6xl mx-auto mb-20 scroll-reveal">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 text-orange-400">特別な時間を皆さんで過ごしましょう！</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-gradient-to-br from-purple-900 to-gray-900 rounded-2xl p-8 border border-purple-500">
+                    <div class="flex items-center mb-4">
+                        <span class="text-5xl mr-4">🍶</span>
+                        <h3 class="text-2xl font-bold text-orange-300">30種類以上のお酒をご提供！</h3>
+                    </div>
+                    <p class="text-gray-300 mb-4">桜花酒造自慢の日本酒をはじめとしたお酒を30種類以上ご用意しております！</p>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-center"><span class="text-orange-400 mr-2">✓</span>日本酒好きにはたまらないラインナップ。</li>
+                        <li class="flex items-center"><span class="text-orange-400 mr-2">✓</span>ジャパニーズウィスキーもご用意。</li>
+                        <li class="flex items-center"><span class="text-orange-400 mr-2">✓</span>ソフトドリンクや軽食もございます。</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gradient-to-br from-orange-900 to-gray-900 rounded-2xl p-8 border border-orange-500">
+                    <div class="flex items-center mb-4">
+                        <span class="text-5xl mr-4">🐶</span>
+                        <h3 class="text-2xl font-bold text-orange-300">店内で着ぐるみが出せちゃう！</h3>
+                    </div>
+                    <p class="text-gray-300 mb-4">店内では着ぐるみを出すことが出来ます！映える写真を撮っちゃおう！</p>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-center"><span class="text-orange-400 mr-2">✓</span>更衣室完備。</li>
+                        <li class="flex items-center"><span class="text-orange-400 mr-2">✓</span>当日獣化される場合、ご案内いたします。</li>
+                        <li class="flex items-center"><span class="text-orange-400 mr-2">✓</span>雨天でも商店街内の為、屋根が付いておりますので安心して獣化可能です。</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Access Section -->
+        <div class="max-w-4xl mx-auto mb-20 scroll-reveal">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 text-orange-400">アクセス</h2>
+            <div class="bg-gray-800 rounded-2xl p-8 border border-gray-700">
+                <div class="grid md:grid-cols-1 gap-8 map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3251.2641273069553!2d139.59690827610132!3d35.42348654408915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60185b6b927a6681%3A0xc291bfb91ac0aad0!2z5qGc6Iqx6YWS6YCg!5e0!3m2!1sja!2sjp!4v1760156513185!5m2!1sja!2sjp" height="500" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                </div>
+            <div class="bg-gray-800 rounded-2xl p-8 border border-gray-700">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4 text-orange-300">🍶 会場</h3>
+                        <p class="text-gray-300 mb-4">弘明寺商店街「桜花酒造」</p>
+                        <p class="text-gray-400 text-sm mb-2">〒232-0067</p>
+                        <p class="text-gray-400 text-sm mb-4">神奈川県横浜市南区弘明寺町154</p>
+                        
+                        <h3 class="text-2xl font-bold mb-4 text-orange-300 mt-6">🚃 電車でお越しの方</h3>
+                        <ul class="space-y-2 text-gray-400">
+                            <li>• 京急弘明寺駅より徒歩5分</li>
+                            <li>• 横浜市営地下鉄ブルーライン弘明寺駅より徒歩5分</li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4 text-orange-300">🚗 お車でお越しの方</h3>
+                        <p class="text-gray-400 mb-4">近隣のコインパーキングをお調べの上、ご利用くださいませ。<br>※飲酒運転は絶対におやめください</p>
+                        
+                        <h3 class="text-2xl font-bold mb-4 text-orange-300 mt-6">📝 注意事項</h3>
+                        <ul class="space-y-2 text-gray-400 text-sm">
+                            <li>• 20歳未満の方の飲酒は法律で禁止されています。</li>
+                            <li>• 未成年の方はソフトドリンクをご用意致します。</li>
+                            <li>• 着ぐるみ着用の際、更衣室前から店内前以外の商店街への出歩きはご遠慮ください。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="max-w-4xl mx-auto mb-20 scroll-reveal">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 text-orange-400">よくある質問</h2>
+            <div class="space-y-4">
+                <div class="bg-gray-800 rounded-xl p-6 border border-gray-700">
+                    <h3 class="text-xl font-bold mb-2 text-orange-300">Q. 一人でも参加できますか?</h3>
+                    <p class="text-gray-300">A. もちろんです! イベント内で交流をし、楽しく過ごせる友達を作りましょう！</p>
+                </div>
+
+                <div class="bg-gray-800 rounded-xl p-6 border border-gray-700">
+                    <h3 class="text-xl font-bold mb-2 text-orange-300">Q. 着ぐるみは必須ですか?</h3>
+                    <p class="text-gray-300">A. 必須ではありません、私服でのご参加も大歓迎です。しかし、着ぐるみがあればより楽しめるでしょう！ ハーフスーツでも可能です！</p>
+                </div>
+
+                <div class="bg-gray-800 rounded-xl p-6 border border-gray-700">
+                    <h3 class="text-xl font-bold mb-2 text-orange-300">Q. お酒が飲めないのですが参加できますか?</h3>
+                    <p class="text-gray-300">A. もちろんです! ソフトドリンクもご用意しています。雰囲気を楽しむだけでも充実した1日となることでしょう！</p>
+                </div>
+
+                <div class="bg-gray-800 rounded-xl p-6 border border-gray-700">
+                    <h3 class="text-xl font-bold mb-2 text-orange-300">Q. 追加のドリンクは購入できますか?</h3>
+                    <p class="text-gray-300">A. はい、店舗内で追加のドリンク（アルコール・ソフトドリンク）を購入いただけます。1杯500円からになります。その場合、チケットでの購入とはなりません。</p>
+                </div>
+
+                <div class="bg-gray-800 rounded-xl p-6 border border-gray-700">
+                    <h3 class="text-xl font-bold mb-2 text-orange-300">Q. 混雑時はどうなりますか？</h3>
+                    <p class="text-gray-300">定員は約20名になります。出来る限りスペースはご用意いたしますが、状況により入場制限をかける場合がございます。ご了承くださいませ。</p>
+                </div>
+                <div class="bg-gray-800 rounded-xl p-6 border border-gray-700">
+                    <h3 class="text-xl font-bold mb-2 text-orange-300">Q. 雨が降ってしまった場合は開催されますか？</h3>
+                    <p class="text-gray-300">開催致します。お店が商店街内にありますため、屋根が付いております。そのため、ご心配なくご参加頂けます。</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Final CTA Section -->
+        <div class="max-w-4xl mx-auto mb-20 scroll-reveal">
+            <div class="bg-gradient-to-br from-orange-600 via-red-600 to-purple-700 rounded-3xl p-12 text-center shadow-2xl pulse-glow">
+                <div class="text-6xl mb-6">🎃🐶🐱</div>
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">皆様のご参加をお待ちしております！</h2>
+
+                <div class="text-sm text-orange-100 space-y-2">
+                    <p>📞 お問い合わせ:電話番号	045-334-8444 (平日17:00〜22:00,土日・祝日13:00〜22:00)</p>
+                    <p>🌐 X:https://x.com/oukashuzou</p>
+                    <p>🌐 Instagram:https://www.instagram.com/p/DG-JrBfTYh4/</p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Organizer Info -->
+        <div class="max-w-4xl mx-auto mb-20 scroll-reveal">
+            <div class="bg-gray-800 rounded-2xl p-8 border border-gray-700">
+                <h2 class="text-3xl font-bold text-center mb-8 text-orange-400">桜花酒造について</h2>
+                <div class="flex flex-col md:flex-row items-center gap-8">
+                    <div class="w-48 h-60 bg-white rounded-full flex items-center justify-center text-6xl">
+                         <img src="./logo.png">
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="text-2xl font-bold mb-4 text-orange-300">2024年11月17日、オープン</h3>
+                        <p class="text-gray-300 mb-4 leading-relaxed">
+                            酒屋ならではの品揃え、自分好みの一杯に出会える。
+                        </p>
+                        <p class="text-gray-400 text-sm">
+                            横浜・弘明寺の商店街にある、
+酒屋がつくった日本酒専門の角打ち。
+
+全国の銘酒を知り尽くした酒屋だからこそ、
+常に最高のラインナップを揃えています。
+
+しかも、定額で飲み放題。
+自由に飲み比べて、あなたの「推し」を
+一緒に見つけましょう。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Note -->
+        <div class="text-center mt-12 text-gray-400 scroll-reveal">
+            <div class="text-sm space-y-2 max-w-2xl mx-auto">
+                <p>※ 20歳未満の飲酒は法律で禁止されています</p>
+                <p>※ 当日の様子は写真・動画で撮影され、SNSや次回の告知に使用される場合があります</p>
+                <p>※ 状況により、内容が変更になる場合がございます</p>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-700">
+                <p class="text-lg mb-2">桜花酒造 ファーリーハロウィン 2025</p>
+                <p class="text-sm">© 2025 OukaKura. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.carousel-item');
+        const indicators = document.querySelectorAll('.indicator');
+        let autoSlideInterval;
+
+        function showSlide(n) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            indicators.forEach(ind => ind.classList.remove('opacity-100'));
+            indicators.forEach(ind => ind.classList.add('opacity-50'));
+            
+            currentSlide = (n + slides.length) % slides.length;
+            slides[currentSlide].classList.add('active');
+            indicators[currentSlide].classList.remove('opacity-50');
+            indicators[currentSlide].classList.add('opacity-100');
+        }
+
+        function changeSlide(direction) {
+            showSlide(currentSlide + direction);
+            resetAutoSlide();
+        }
+
+        function goToSlide(n) {
+            showSlide(n);
+            resetAutoSlide();
+        }
+
+        function resetAutoSlide() {
+            clearInterval(autoSlideInterval);
+            autoSlideInterval = setInterval(() => {
+                showSlide(currentSlide + 1);
+            }, 5000);
+        }
+
+        // Auto-slide every 5 seconds
+        resetAutoSlide();
+
+        // Scroll reveal animation
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.scroll-reveal').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+    <style>
+        .map-container iframe {
+            width: 100%;
+        }
+    </style>
+</body>
+</html>
