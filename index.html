@@ -17,24 +17,29 @@
         .float { animation: float 3s ease-in-out infinite; }
         .pulse-glow { animation: pulse-glow 2s ease-in-out infinite; }
         body { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); }
+        .custom-font {font-family: "Kaisei Decol", serif;}
         .carousel-item { display: none; }
         .carousel-item.active { display: block; }
         .scroll-reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s; }
         .scroll-reveal.active { opacity: 1; transform: translateY(0); }
     </style>
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol&display=swap" rel="stylesheet">
 </head>
 <body class="min-h-screen text-white">
     <!-- Hero Carousel Section -->
     <div class="relative h-screen overflow-hidden">
         <!-- Carousel Images -->
         <div class="carousel-item active absolute inset-0 transition-opacity duration-1000">
+            <div class="absolute w-dvw h-dvh bg-black opacity-30"></div>
             <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black opacity-70"></div>
-            <img src="./IMG_8703.png" alt="ハロウィンパーティー" class="w-full h-full object-cover">
+            <div class="image-box">
+            <img src="./IMG_8703.png" alt="ハロウィンパーティー">
+            </div>
             <div class="absolute inset-0 flex items-center justify-center">
                 <div class="text-center px-4">
                     <div class="text-6xl md:text-8xl mb-6 float">🐶🎃🐱</div>
-                    <h1 class="text-5xl md:text-7xl font-bold mb-4 text-gray300 drop-shadow-2xl">伝統的な酒造で過ごす</h1>
-                    <p class="text-3xl md:text-5xl font-bold text-orange-400 drop-shadow-lg">幻想的なハロウィンナイト！</p>
+                    <h1 class="custom-font text-5xl md:text-7xl font-bold mb-4 text-gray300 drop-shadow-2xl">伝統的な酒造で過ごす</h1>
+                    <p class="custom-font text-3xl md:text-5xl font-bold text-orange-400 drop-shadow-lg">幻想的なハロウィンナイト！</p>
                 </div>
             </div>
         </div>
@@ -241,6 +246,8 @@
                     <p>📞 お問い合わせ:電話番号	045-334-8444 (平日17:00〜22:00,土日・祝日13:00〜22:00)</p>
                     <p>🌐 X:https://x.com/oukashuzou</p>
                     <p>🌐 Instagram:https://www.instagram.com/p/DG-JrBfTYh4/</p>
+                    <p>🌐 主催 りゅーちゃん:https://x.com/NaNaChi_is_Life</p>
+                    <p>🌐 サポーター kuDo@D.R.C:https://x.com/DRC_2nd</p>
                 </div>
             </div>
         </div>
@@ -349,6 +356,19 @@
         .map-container iframe {
             width: 100%;
         }
+        .image-box {
+  width: 100%;
+  overflow: hidden;
+}
+
+.image-box img {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    object-position: 0% 20%;
+  display: block;
+}
+
     </style>
 </body>
 </html>
